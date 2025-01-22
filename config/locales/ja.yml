@@ -59,4 +59,6 @@ ja:
   sessions:
     new:
       title: ログインページ
+      email: メールアドレス
+      password: パスワード
       submit: ログイン

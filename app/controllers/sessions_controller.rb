@@ -6,9 +6,9 @@ class SessionsController < ApplicationController
         user = User.find_by(email: params[:session][:email].downcase)
 
         if user&.authenticate(params[:session][:password])
-            render json: { result: "Successfully logged in!", user: user}
+            redirect_to tasks_path
         else
-            render json: { result: "Login failed!"}
+            render :new
         end
     end
 end

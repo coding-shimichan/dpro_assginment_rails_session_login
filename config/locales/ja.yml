@@ -11,9 +11,6 @@ ja:
         email: メールアドレス
         password: パスワード
         password_confirmation: パスワード（確認）
-      session:
-        email: メールアドレス
-        password: パスワード
   errors:
     format: "%{attribute}%{message}"
     messages:
@@ -59,3 +56,7 @@ ja:
       updated: アカウントを更新しました
     destroy:
       destroyed: アカウントを削除しました
+  sessions:
+    new:
+      title: ログインページ
+      submit: ログイン

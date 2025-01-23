@@ -27,7 +27,7 @@ class UsersController < ApplicationController
 
     if @user.save
       log_in(@user)
-      redirect_to tasks_path
+      redirect_to tasks_path, notice: t(".created")
     else
       render :new
     end

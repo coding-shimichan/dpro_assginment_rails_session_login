@@ -72,3 +72,5 @@ ja:
     create:
       created: ログインしました
       failed: メールアドレスまたはパスワードに誤りがあります
+    destroy:
+      destroyed: ログアウトしました

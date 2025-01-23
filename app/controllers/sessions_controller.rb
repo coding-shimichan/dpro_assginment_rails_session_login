@@ -19,6 +19,7 @@ class SessionsController < ApplicationController
 
     def destroy
         session.delete(:user_id)
+        flash[:notice] = t(".destroyed")
         redirect_to new_session_path
     end
 end

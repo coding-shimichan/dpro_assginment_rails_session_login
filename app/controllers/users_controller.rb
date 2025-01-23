@@ -27,7 +27,8 @@ class UsersController < ApplicationController
 
     if @user.save
       log_in(@user)
-      redirect_to tasks_path, notice: t(".created")
+      flash[:notice] = t(".created")
+      redirect_to tasks_path
     else
       render :new
     end
@@ -37,7 +38,8 @@ class UsersController < ApplicationController
   def update
     respond_to do |format|
       if @user.update(user_params)
-        format.html { redirect_to user_url(@user), notice: t(".updated") }
+        flash[:notice] = t(".updated")
+        format.html { redirect_to user_url(@user) }
         format.json { render :show, status: :ok, location: @user }
       else
         format.html { render :edit, status: :unprocessable_entity }

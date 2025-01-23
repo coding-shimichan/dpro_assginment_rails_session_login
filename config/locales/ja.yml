@@ -71,3 +71,4 @@ ja:
       submit: ログイン
     create:
       created: ログインしました
+      failed: メールアドレスまたはパスワードに誤りがあります

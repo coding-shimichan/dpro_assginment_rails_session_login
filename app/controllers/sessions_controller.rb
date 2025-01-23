@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
             flash[:notice] = t(".created")
             redirect_to tasks_path
         else
-            flash[:alert] = "email or password is incorrect"
+            flash[:alert] = t(".failed")
             render :new
         end
     end

@@ -10,10 +10,14 @@
   </head>
 
   <body>
-    <p id="notice"><%= notice %></p>
+    <% if flash[:notice] %>
+      <div id="flash-notice">
+          <%= flash[:notice] %>
+      </div>
+    <% end %>
 
     <% if flash[:alert] %>
-      <div style="color: red">
+      <div id="flash-alert">
           <%= flash[:alert] %>
       </div>
     <% end %>

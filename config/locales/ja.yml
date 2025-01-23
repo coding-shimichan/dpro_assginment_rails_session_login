@@ -69,3 +69,5 @@ ja:
       email: メールアドレス
       password: パスワード
       submit: ログイン
+    create:
+      created: ログインしました

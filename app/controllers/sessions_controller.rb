@@ -9,6 +9,7 @@ class SessionsController < ApplicationController
             log_in(user)
             redirect_to tasks_path
         else
+            flash[:alert] = "email or password is incorrect"
             render :new
         end
     end

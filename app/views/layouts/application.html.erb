@@ -11,7 +11,13 @@
 
   <body>
     <p id="notice"><%= notice %></p>
-    
+
+    <% if flash[:alert] %>
+      <div style="color: red">
+          <%= flash[:alert] %>
+      </div>
+    <% end %>
+
     <ul>
     <% if logged_in? %>
       <li><%= link_to "タスク一覧", tasks_path, id: "tasks-index" %></li>

@@ -1,4 +1,5 @@
 class TasksController < ApplicationController
+  # Hooks
   before_action :set_task, only: %i[ show edit update destroy ]
 
   def index

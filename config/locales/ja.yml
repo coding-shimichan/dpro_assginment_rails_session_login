@@ -33,6 +33,7 @@ ja:
     destroy: 削除
     back: 戻る
     confirm_destroy: 本当に削除してもよろしいですか？
+    login_required: ログインしてください
   tasks:
     index:
       title: タスク一覧ページ
@@ -57,6 +58,7 @@ ja:
       title: アカウント編集ページ
     show:
       title: アカウント詳細ページ
+      confirm: 本当に削除してもよろしいですか？
     create:
       created: アカウントを登録しました
     update:

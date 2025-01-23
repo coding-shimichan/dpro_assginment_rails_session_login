@@ -11,4 +11,4 @@
 </p>
 
 <%= link_to t('common.edit'), edit_user_path(@user), id: "edit-user" %>
-<%= link_to t('common.destroy'), user_path(@user), method: :delete, data: { confirm: 'Are you sure?' }, id: "destroy-user" %>
+<%= link_to t('common.destroy'), user_path(@user), method: :delete, data: { confirm: t(".confirm") }, id: "destroy-user" %>

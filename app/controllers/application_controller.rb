@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
 
     def require_login
         if !(logged_in?)
-            flash[:alert] = "Login required"
+            flash[:alert] = t("common.login_required")
             redirect_to new_session_path
         end
     end

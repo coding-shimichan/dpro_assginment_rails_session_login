@@ -3,6 +3,11 @@ class UsersController < ApplicationController
   skip_before_action :require_login, only: [:new, :create]
   before_action :set_user, only: %i[ show edit update destroy ]
   
+  # GET /users or /users.json
+  def index
+    redirect_to tasks_path
+  end
+
   # GET /users/1 or /users/1.json
   def show
   end

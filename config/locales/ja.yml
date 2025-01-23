@@ -11,6 +11,12 @@ ja:
         email: メールアドレス
         password: パスワード
         password_confirmation: パスワード（確認）
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              taken: はすでに使用されています
   errors:
     format: "%{attribute}%{message}"
     messages:

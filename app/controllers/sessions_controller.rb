@@ -9,7 +9,8 @@ class SessionsController < ApplicationController
 
         if user&.authenticate(params[:session][:password])
             log_in(user)
-            redirect_to tasks_path, notice: t(".created")
+            flash[:notice] = t(".created")
+            redirect_to tasks_path
         else
             flash[:alert] = "email or password is incorrect"
             render :new
